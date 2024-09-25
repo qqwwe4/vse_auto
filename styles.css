@@ -1,0 +1,133 @@
+/* ======  Базовые стили ====== */
+
+.container {
+    max-width: 1276px;
+    margin: 0 auto;
+    padding: 0 164px;
+  }
+  
+  /* @media (max-width: 1440px) {
+    .container {
+      padding: 0 42px;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    .container {
+      padding: 0 39px;
+    }
+  } */
+
+
+/* =====Стили header  ===== */
+
+
+
+  .header {
+    
+    background-color: #8a8a8a;
+}
+.header_container {
+  /* padding: 15px 0;  */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.logo_link {
+}
+
+.logo_img {
+  margin-right: 40px;
+}
+
+.nav {
+}
+
+.nav_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_item {
+  margin-right: 16px;
+}
+
+.nav_link {
+  text-decoration: none; /* Убираем подчеркивание */
+  position: relative; /* Для создания эффекта подсвечивания */
+  transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.nav_link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ffee00; /* Цвет подсвечивания */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_link:hover {
+  color: #000000; /* Цвет текста при наведении */
+  font-weight: bold;
+}
+
+.nav_link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+/* ======hero section ====== */
+
+
+.hero {
+  padding: 70px 0;
+}
+.hero_container{
+}
+.hero_title {
+padding-bottom: 32px;
+  width: 694px;
+  font-size: 48px;
+}
+.hero_accent {
+  background-color: #ffee00;
+  border-radius: 15px;
+}
+.hero_text {
+  font-size: 24px;
+}
+
+.hero_text_accent {
+  font-weight: bold;
+}
+.hero_wrapper {
+  display: flex;
+}
+.hero_advanteges {
+}
+.hero_list {
+}
+.hero_item {
+}
+.hero_title2 {
+}
+.hero_text_item {
+  
+}
+.hero_car {
+  width: 800px;
+}
+
+
